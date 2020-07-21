@@ -528,7 +528,7 @@ applyBindings(defaultBindings, __bva__);
       'transactionSubtotal'    : '{{checkout.subtotal_price |  money_without_currency| remove: ","}}',
       {% for discount in checkout.discounts %}
       'promoCode' : '{{discount.code}}',
-      'discount'  : '{{discount.amoun t | money_without_currency}}',
+      'discount'  : '{{discount.amount | money_without_currency}}',
       {% endfor %}
 
       'products': __bva__products
